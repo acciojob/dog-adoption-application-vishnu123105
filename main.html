@@ -9,24 +9,33 @@
 <body>
 	<h1 style="text-align:center">Dog Adoption Application</h1>
 	<form action="/submit-application" method="POST">
+		<div class="form-field">
 	<label for="name">Name</label>
 	<input type="text" id="name" placeholder="Name">
+	</div>
 	<br>
 	<br>
+		<div class="form-field">
 	<label for="phone number">Phone number</label>
 	<input type="text" id="phone" placeholder="phone number">
+	</div>
 	<br>
 	<br>
+		<div class="form-field">
 	<label for="address">Address</label>
 	<input type="text" id="address" placeholder="address">
+	</div>		
 	<br>
 	<br>
+		<div class="form-field">
 	<label for="dog_experience">
 		<input type="checkbox" id="checkbox">
 		Have you ever lived with a Dog before?
 	</label>
+	</div>
 	<br>
 	<br>
+		<div class="form-field">
 	<label for="breeds">Please select your preferred breeds:</label>
             <select id="breeds" name="breeds[]" multiple required>
                 <option value="Labrador">Labrador</option>
@@ -35,6 +44,7 @@
                 <option value="Bulldog">Bulldog</option>
                 <option value="Poodle">Poodle</option>
             </select>
+			</div>
 		<br>
 	<br>
 	<button type="submit">submit</button>
